@@ -28,7 +28,8 @@ def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  CONVEN
+  NEW_ORGANIC = ORGANIC_PRODUCE.sort_by { |produce| produce }
+  CONVENTIONAL_PRODUCE = CONVENTIONAL_PRODUCE.sort_by { |produce| produce}
   assembled_matrix.sort = [CONVENTIONAL_PRODUCE,ORGANIC_PRODUCE]
 end
 
